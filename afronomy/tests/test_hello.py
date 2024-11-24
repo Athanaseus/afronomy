@@ -9,7 +9,7 @@ def test_hello_with_function():
 def test_hello_with_name():
     # Test the `--name` option
     result = subprocess.run(
-        ['hello', 'hello'. '--name', 'Afronomy'],
+        ['hello', 'hello', '--name', 'Afronomy'],
         capture_output=True,
         text=True
     )
@@ -18,7 +18,7 @@ def test_hello_with_name():
 def test_hello_prompt():
     # Test the prompt input
     result = subprocess.run(
-        ['hello hello'],
+        ['hello', 'hello'],
         input='Athanaseus\n',
         capture_output=True,
         text=True
