@@ -46,3 +46,6 @@ optional = true
 [tool.poetry.group.tests.dependencies]
 pytest = "*"
 flake8 = "*"
+
+[tool.pytest.ini_options]
+testpaths = ["afronomy/afronomy/tests"]
