@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 import click
+from omegaconf import OmegaConf
+from scabha.schema_utils import clickify_parameters
 
 def hello(name: str) -> str:
     """Function that returns a greeting string."""
@@ -10,6 +12,9 @@ def hello(name: str) -> str:
 def main(name):
     """CLI entry point."""
     click.echo(hello(name))
+
+schemas = OmegaConf.load(os.path.join(os.path.dirname(__file__), "cabs/hello.yml"))
+prnt(schemas)
 
 if __name__ == '__main__':
     main()
