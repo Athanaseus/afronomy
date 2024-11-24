@@ -8,9 +8,9 @@ homepage = "https://github.com/athanaseus/afronomy"
 repository = "https://github.com/athanseus/afronomy.git"
 keywords = ["Astronomy", "Masking", "Imaging"]
 classifiers = [
-          "Development Status :: 4 - Beta"
+          "Development Status :: 4 - Beta",
           "Intended Audience :: Science/Research",
-          "License :: OSI Approved :: MIT License"
+          "License :: OSI Approved :: MIT License",
           "Operating System :: POSIX :: Linux",
           "Programming Language :: Python",
           "Topic :: Scientific/Engineering :: Astronomy"
