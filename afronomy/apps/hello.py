@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import click
 
 def hello(name: str) -> str:
