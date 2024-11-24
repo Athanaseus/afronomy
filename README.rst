@@ -50,7 +50,7 @@ Contributions are always welcome! Please ensure that you adhere to our coding
 standards pep8_.
 
 .. |Project License| image:: https://img.shields.io/badge/license-MIT-blue.svg
-                     :target: https://github.com/ratt-ru/afronomy/blob/main/LICENSE
+                     :target: https://github.com/athanaseus/afronomy/blob/main/LICENSE
                      :alt:
 
 .. |Python Versions| image:: https://img.shields.io/pypi/pyversions/afronomy.svg
@@ -61,7 +61,7 @@ standards pep8_.
                   :target: https://pypi.python.org/pypi/afronomy
                   :alt:
 
-.. _source: https://github.com/ratt-ru/afronomy
-.. _license: https://github.com/ratt-ru/afronomy/blob/main/LICENSE
+.. _source: https://github.com/athanaseus/afronomy
+.. _license: https://github.com/athanaseus/afronomy/blob/main/LICENSE
 .. _pep8: https://www.python.org/dev/peps/pep-0008
 .. _page: https://athanaseus.github.io/afronomy
