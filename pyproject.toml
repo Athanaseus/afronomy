@@ -21,7 +21,8 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-afronomy = "afronomy.main:driver"
+hello = "afronomy.apps.hello:main"
+afronomy = "afronomy.apps.main:driver"
 
 [tool.poetry.dependencies]
 python = "^3.10"
