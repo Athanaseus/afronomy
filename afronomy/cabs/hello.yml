@@ -6,9 +6,8 @@ opts:
     symlink: log
   backend:
     select: native
-    singularity:
-      auto_build: false
-      image_dir: /scratch3/users/athanaseus/images
+    native:
+      enable: true
     rlimits:
       NOFILE: 4096  # set high limit on number of open files
 
