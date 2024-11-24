@@ -7,7 +7,7 @@ lib:
 
 cabs:
   afronomy.hello:
-    _use: lib.misc.breifast.cabs
+    _use: lib.misc.hello.cabs
     info: Print Hello name
     command: hello
     backend:
