@@ -8,8 +8,10 @@ Radio interferometry self-calibration workflows.
 # Parameter definition
 
 ```
-afronomy [options] --ms MS
-
-optional arguments:
-    -h, --help            show this help message and exit
+Usage: afronomy [OPTIONS] COMMAND [ARGS]...
+  Top-level CLI for Afronomy.
+Options:
+  --help  Show this message and exit.
+Commands:
+  hello  CLI entry point.
 ```
