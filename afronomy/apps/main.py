@@ -1,3 +1,4 @@
+import sys
 import click
 from .hello import main
 
