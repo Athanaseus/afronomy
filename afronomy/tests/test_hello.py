@@ -1,9 +1,9 @@
 import subprocess
-from afronomy.apps.hello import hello
+from afronomy.apps.hello import _hello
 
 def test_hello_with_function():
     # Test the hello() function
-    result = hello('Afronomy')
+    result = _hello('Afronomy')
     assert result == "Hello Africalim"
 
 def test_hello_prompt():
