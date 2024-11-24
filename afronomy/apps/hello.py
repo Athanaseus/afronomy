@@ -15,7 +15,7 @@ def main(name):
     click.echo(hello(name))
 
 schemas = OmegaConf.load(os.path.join(os.path.dirname(__file__), "cabs/hello.yml"))
-prnt(schemas)
+print(schemas)
 
 if __name__ == '__main__':
     main()
