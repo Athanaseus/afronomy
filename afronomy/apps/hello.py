@@ -19,9 +19,9 @@ schemas = OmegaConf.load(os.path.join(os.path.dirname(__file__), "../cabs/hello.
 def clickify(name, schema_name=None):
     schema_name = schema_name or name
     return lambda func: \
-        cli.command(name, help=schemas.cabs.get(f'afronomy.{schema_name}').info,no_args_is_help=True)(
+        main.command(name, help=schemas.cabs.get(f'afronomy.{schema_name}').info,no_args_is_help=True)(
                 clickify_parameters(schemas.cabs.get(f'afronomy.{schema_name}'))(func)
         )
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
