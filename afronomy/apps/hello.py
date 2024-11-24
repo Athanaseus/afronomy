@@ -5,13 +5,18 @@ import click
 from omegaconf import OmegaConf
 from scabha.schema_utils import clickify_parameters
 
+@click.group()
+def main():
+    """CLI entry point."""
+    pass
+
 def hello(name: str) -> str:
     """Function that returns a greeting string."""
     return f"Hello {name}"
 
-@click.group()
+@main.command()
 @click.option('--name', prompt='Please enter your name', help='The name to greet.')
-def main(name):
+def greet(name):
     """CLI entry point."""
     click.echo(hello(name))
 
