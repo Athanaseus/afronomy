@@ -8,6 +8,8 @@ opts:
     select: native
     native:
       enable: true
+    kube:
+      enable: false
     rlimits:
       NOFILE: 4096  # set high limit on number of open files
 
