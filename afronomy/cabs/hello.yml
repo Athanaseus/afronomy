@@ -1,21 +1,33 @@
-lib:
-  misc:
-    hello:
-      cabs:
-        image:
-          registry: quay.io/stimela
+opts:
+  log:
+    dir: logs/log-{config.run.datetime}
+    name: log-{info.taskname}
+    nest: 10
+    symlink: log
+  backend:
+    select: native
+    singularity:
+      auto_build: false
+      image_dir: /scratch3/users/athanaseus/images
+    rlimits:
+      NOFILE: 4096  # set high limit on number of open files
 
 cabs:
   afronomy.hello:
-    _use: lib.misc.hello.cabs
     info: Print Hello name
-    command: hello
+    command: hello hello
     backend:
       rlimits:
         NOFILE: 100000 
     inputs:
-      name: str *  "String name to print"
+      name:
+        info: "String name to print"
+        dtype: str
+        required: true
+        policies:
+          positional: true
     outputs:
       stdout: 
-        dtype: str 
         info: Output string name
+        dtype: str 
+        implicit: "hello *{current.name}"
