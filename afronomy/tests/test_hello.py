@@ -4,7 +4,7 @@ from afronomy.apps.hello import _hello
 def test_hello_with_function():
     # Test the hello() function
     result = _hello('Afronomy')
-    assert result == "Hello Africalim"
+    assert result == "Hello Afronomy"
 
 def test_hello_prompt():
     # Test the prompt input
