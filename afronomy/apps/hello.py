@@ -14,7 +14,7 @@ def main(name):
     """CLI entry point."""
     click.echo(hello(name))
 
-schemas = OmegaConf.load(os.path.join(os.path.dirname(__file__), "cabs/hello.yml"))
+schemas = OmegaConf.load(os.path.join(os.path.dirname(__file__), "../cabs/hello.yml"))
 print(schemas)
 
 if __name__ == '__main__':
