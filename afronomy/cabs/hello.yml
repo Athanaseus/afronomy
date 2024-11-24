@@ -14,9 +14,8 @@ cabs:
       rlimits:
         NOFILE: 100000 
     inputs:
-      name: str *  "list of Stokes I images to stack"
+      name: str *  "String name to print"
     outputs:
       stdout: 
         dtype: str 
         info: Output string name
-        mkdir: false
