@@ -28,7 +28,7 @@ afronomy = "afronomy.apps.main:driver"
 python = "^3.10"
 click = "^8.1"
 codex-africanus = "0.4"
-stimela = "2.0"
+stimela = "*"
 
 # Optional dependencies start here
 pytest = { version = "*", optional=true }
