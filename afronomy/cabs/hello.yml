@@ -1,0 +1,22 @@
+lib:
+  misc:
+    hello:
+      cabs:
+        image:
+          registry: quay.io/stimela
+
+cabs:
+  afronomy.hello:
+    _use: lib.misc.breifast.cabs
+    info: Print Hello name
+    command: hello
+    backend:
+      rlimits:
+        NOFILE: 100000 
+    inputs:
+      name: str *  "list of Stokes I images to stack"
+    outputs:
+      stdout: 
+        dtype: str 
+        info: Output string name
+        mkdir: false
