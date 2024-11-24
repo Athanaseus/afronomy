@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import os
 import click
 from omegaconf import OmegaConf
 from scabha.schema_utils import clickify_parameters
