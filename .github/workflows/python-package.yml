@@ -61,4 +61,5 @@ jobs:
   
     - name: Test command
       run: |
-        poetry run afronomy -h
+        #poetry run afronomy -h
+        poetry run pytest test_hello.py
