@@ -16,7 +16,7 @@ opts:
 cabs:
   afronomy.hello:
     info: Print Hello name
-    command: hello hello
+    command: hello
     backend:
       rlimits:
         NOFILE: 100000 
@@ -30,5 +30,9 @@ cabs:
     outputs:
       stdout: 
         info: Output string name
-        dtype: str 
+        dtype: str
         implicit: "hello *{current.name}"
+      outfile:
+        info: Output file name
+        dtype: File
+        default: hello.txt
