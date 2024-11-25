@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "afronomy"
-version = "0.0.1"
+version = "0.0.1-rc.2"
 description = "Application to simulate self-calibration and quality assurance checks"
 authors = ["Athanaseus Ramaila & RATT <ramaila.jat@gmail.com>"]
 readme = "README.rst"
@@ -21,8 +21,8 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-hello = "afronomy.apps.hello:main"
 afronomy = "afronomy.apps.main:driver"
+hello = "afronomy.apps.hello:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"

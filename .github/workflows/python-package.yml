@@ -63,6 +63,6 @@ jobs:
       run: |
         poetry run afronomy --help
         poetry run hello --help
-        poetry run ls -R
+        poetry run hello afronomy
         poetry run pytest -s -vvv afronomy
-        poetry run stimela doc afronomy/cabs/hello.yml afronomy.hello
+        poetry run stimela run afronomy/cabs/hello.yml afronomy.hello africalim
