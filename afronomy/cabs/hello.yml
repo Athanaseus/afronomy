@@ -11,7 +11,7 @@ opts:
     kube:
       enable: false
     rlimits:
-      NOFILE: 4096  # set high limit on number of open files
+      NOFILE: 61666  # set high limit on number of open files
 
 cabs:
   afronomy.hello:
@@ -19,7 +19,7 @@ cabs:
     command: hello
     backend:
       rlimits:
-        NOFILE: 100000 
+        NOFILE: 999 
     inputs:
       name:
         info: "String name to print"
