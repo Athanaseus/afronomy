@@ -27,8 +27,8 @@ hello = "afronomy.apps.hello:main"
 [tool.poetry.dependencies]
 python = "^3.10"
 click = "^8.1"
-codex-africanus = "0.4"
-stimela = "*"
+codex-africanus = "^0.4"
+stimela = "^2"
 
 # Optional dependencies start here
 pytest = { version = "*", optional=true }
