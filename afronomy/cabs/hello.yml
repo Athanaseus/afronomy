@@ -14,7 +14,7 @@ opts:
       NOFILE: 61666  # set high limit on number of open files
 
 cabs:
-  afronomy.hello:
+  hello:
     info: Print Hello name
     command: hello
     backend:
@@ -31,7 +31,7 @@ cabs:
       stdout: 
         info: Output string name
         dtype: str
-        implicit: "hello *{current.name}"
+        implicit: "hello {current.name}"
       outfile:
         info: Output file name
         dtype: File

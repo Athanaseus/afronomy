@@ -1,0 +1,39 @@
+opts:
+  log:
+    dir: logs/log-{config.run.datetime}
+    name: log-{info.taskname}
+    nest: 10
+    symlink: log
+  backend:
+    select: native
+    native:
+      enable: true
+    kube:
+      enable: false
+    rlimits:
+      NOFILE: 61666  # set high limit on the number of open files
+
+cabs:
+  simulate:
+    info: Corrupt a measurement set (MS) column visibilities with a jones term
+    command: predict
+    backend:
+      rlimits:
+        NOFILE: 999
+    inputs:
+      msname:
+        info: "Measurement set name"
+        dtype: MS
+        required: true
+        policies:
+          positional: true
+      column:
+        info: "Column name for visibility storage (default: MODEL_DATA)"
+        dtype: str
+        required: false
+        default: MODEL_DATA
+    outputs:
+      stdout:
+        info: Confirmation or error message
+        dtype: str
+        implicit: "Corrupt {curret.column} visibilities in {current.msname}"
