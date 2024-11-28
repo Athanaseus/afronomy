@@ -22,12 +22,13 @@ packages = [
 
 [tool.poetry.scripts]
 afronomy = "afronomy.apps.main:driver"
-hello = "afronomy.apps.hello:main"
+hello = "afronomy.apps.main:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 click = "^8.1"
 codex-africanus = "^0.4"
+dask-ms = "^0.2.23"
 stimela = { git = "https://github.com/caracal-pipeline/stimela.git", branch = "master" }
 
 # Optional dependencies start here
