@@ -1,15 +1,16 @@
 import sys
 import click
-from .hello import main
-
+from . import hello, predict, simulate
 
 @click.group()
 def driver():
     """Top-level CLI for Afronomy."""
     pass
 
-# Add hello CLI as a subcommand to driver
-driver.add_command(main, "hello")
+# Add CLI as a subcommands to main driver
+driver.add_command(hello.main, "hello")
+driver.add_command(predict.main, "predict")
+driver.add_command(simulate.main, "simulate")
 
 if __name__ == "__main__":
     sys.exit(driver())
